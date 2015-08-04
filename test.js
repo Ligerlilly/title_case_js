@@ -9,6 +9,10 @@ describe( 'String#title_case', function() {
 
   it( 'should capitalize all words in a multi-word string', function(){
     assert.equal( 'Hi there'.title_case(), "Hi There" )
-  })
+  });
+
+  it( 'only capitilizes prepositions if there at the beggining of the string', function{
+
+  });
 
 });

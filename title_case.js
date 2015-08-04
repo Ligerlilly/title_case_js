@@ -5,7 +5,8 @@ String.prototype.title_case = function () {
   if (words.length > 1) {
     console.log('hi');
     for (var i=0; i < words.length; i++) {
-      word = word.concat( words[i].charAt(0).toUpperCase() + words[i].slice(1) + ' ');
+      word = word.concat( words[i].charAt(0)
+        .toUpperCase() + words[i].slice(1) + ' ');
     }
     return word.trim();
 
