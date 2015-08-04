@@ -8,11 +8,14 @@ describe( 'String#title_case', function() {
   });
 
   it( 'should capitalize all words in a multi-word string', function(){
-    assert.equal( 'Hi there'.title_case(), "Hi There" )
+    assert.equal( 'Hi there'.title_case(), "Hi There" );
   });
 
-  it( 'only capitilizes prepositions if there at the beggining of the string', function{
+  it( 'only capitilizes prepositions if there at the beggining of the string', function(){
+    assert('of the of first of'.title_case(), "Of The of First of");
 
   });
+
+
 
 });
