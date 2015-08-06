@@ -12,7 +12,7 @@ describe( 'String#title_case', function() {
   });
 
   it( 'only capitilizes prepositions if there at the beggining of the string', function(){
-    assert('of the of first of'.title_case(), "Of The of First of");
+    assert.equal('of the of first of'.title_case(), "Of the of First of");
 
   });
 
